@@ -1,6 +1,6 @@
 <form class="form-signin">
   <!-- <img class="mb-4" src="/docs/{{< param docs_version >}}/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
-  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <h1 class="h3 mb-3 font-weight-normal text-center">Please Login</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
@@ -10,6 +10,6 @@
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div> -->
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">All Rights Reserved &copy; 2020</p>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" [routerLink]="['/settings']" routerLinkActive="router-link-active" >Login</button>
+  <p class="mt-5 mb-3 text-muted text-center" >All Rights Reserved &copy; 2020</p>
 </form>
