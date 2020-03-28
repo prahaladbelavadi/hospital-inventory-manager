@@ -8,9 +8,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent],
+  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]
