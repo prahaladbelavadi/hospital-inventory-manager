@@ -16,7 +16,8 @@ const Centers: Center[] = [
     totalVentilators: 1,
     ventilatorsUsage: 2,
     totalPatientCapacity: 2,
-    patientCapacityUsage: 2
+    patientCapacityUsage: 2,
+    status: 'All good'
   },
   {
     name: "St John's",
@@ -29,7 +30,8 @@ const Centers: Center[] = [
     totalVentilators: 1,
     ventilatorsUsage: 2,
     totalPatientCapacity: 2,
-    patientCapacityUsage: 2
+    patientCapacityUsage: 2,
+    status: 'All good'
   },
   {
     name: "St John's",
@@ -42,9 +44,9 @@ const Centers: Center[] = [
     totalVentilators: 1,
     ventilatorsUsage: 2,
     totalPatientCapacity: 2,
-    patientCapacityUsage: 2
+    patientCapacityUsage: 2,
+    status: 'All good'
   }
-
 ];
 
 @Component({
