@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import { Center } from 'src/app/interfaces/center';
 
 const Centers: Center[] = [
@@ -51,10 +54,18 @@ const Centers: Center[] = [
 })
 export class InventoryComponent implements OnInit {
   centers: Center[];
+  selectedCenter: Center;
 
-  constructor() {}
+  constructor(private modalService: NgbModal) {}
 
   ngOnInit(): void {
     this.centers = Centers;
   }
+
+
+  openLg(content, center) {
+    this.modalService.open(content, { size: 'lg' });
+    this.selectedCenter = center;
+  }
+
 }
