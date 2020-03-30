@@ -9,9 +9,10 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { InventoryComponent } from './pages/inventory/inventory.component';
+import { PortalComponent } from './pages/portal/portal.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent],
+  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]

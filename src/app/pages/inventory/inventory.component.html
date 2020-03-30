@@ -17,7 +17,7 @@
             <th scope="col">Pincode</th>
             <th scope="col">Total Ventilators</th>
             <th scope="col">Capacity</th>
-            <th scope="col">Capacity %</th>
+            <th scope="col">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -30,7 +30,7 @@
 
             <td>{{center.ventilatorsUsage}} / {{ center.totalVentilators }}</td>
             <td>
-              <ngb-progressbar type="dark" textType="white" [value]="43" [showValue]="true"></ngb-progressbar>
+              {{center.status}}
             </td>
           </tr>
         </tbody>

@@ -15,4 +15,5 @@ export interface Center {
   // How many patients are currently here
   patientCapacityUsage: Number;
   type ?: String;
+  status: String;
 }
