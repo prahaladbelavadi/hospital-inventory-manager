@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
-  baseURL = '';
+  baseURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
 
@@ -26,26 +26,28 @@ export class DataService {
 
   // Backend Operations
   login(email, password) {
-    return this.http.post(this.baseURL, { email, password });
+    return this.http.post(`${this.baseURL}/login`, { email, password });
   }
 
   fetchAllCenterInfo() {
-    return this.http.get(`${this.baseURL}/center/`);
+    return this.http.get(`${this.baseURL}/centers/`);
   }
 
   fetchCenterInfo(centerId) {
-    return this.http.get(`${this.baseURL}/center/${centerId}`, {});
+    return this.http.get(`${this.baseURL}/centers/${centerId}`, {});
   }
 
   updateCenterInfo(centerId) {
-    return this.http.put(`${this.baseURL}/center/${centerId}`, {});
+    return this.http.put(`${this.baseURL}/centers/${centerId}`, {});
   }
 
+  // Create User : Center
   addCenter() {
-    return this.http.post(`${this.baseURL}/center/`, {});
+    return this.http.post(`${this.baseURL}/centers/`, {});
   }
 
+  // Create User : Volunteer
   addVolunteer() {
-    return this.http.post(`${this.baseURL}/center/`, {});
+    return this.http.post(`${this.baseURL}/volunteer/`, {});
   }
 }
