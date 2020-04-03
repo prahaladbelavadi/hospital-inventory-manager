@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently --kill-others \"npm run frontend\" \"npm run server\"",
+    "frontend": "ng serve",
+    "server": "nodemon backend/index ",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,6 +24,7 @@
     "@angular/router": "~9.1.0",
     "@ng-bootstrap/ng-bootstrap": "^6.0.2",
     "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.6",
     "rxjs": "~6.5.4",
