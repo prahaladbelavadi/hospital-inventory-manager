@@ -6,6 +6,8 @@ export interface Center {
   city: String;
   landmark: String;
   pincode: String;
+  bed?: Number;
+  bedWithVentilator?: Number;
   // Total number of ventilators at location
   totalVentilators: Number;
   // How many ventilators are being used
@@ -14,6 +16,6 @@ export interface Center {
   totalPatientCapacity: Number;
   // How many patients are currently here
   patientCapacityUsage: Number;
-  type ?: String;
+  type?: String;
   status: String;
 }
