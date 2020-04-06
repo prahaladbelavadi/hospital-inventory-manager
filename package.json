@@ -1,5 +1,5 @@
 {
-  "name": "new-app",
+  "name": "covid-inventory-management",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

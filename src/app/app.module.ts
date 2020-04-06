@@ -11,9 +11,10 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
 import { PortalComponent } from './components/portal/portal.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent, HeaderComponent],
+  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent, HeaderComponent, DashboardComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]
