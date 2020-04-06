@@ -1,3 +1,5 @@
+<!-- <app-header></app-header> -->
+
 <div class="container">
   <div class="container-fluid">
     <div class="jumbotron">
@@ -15,8 +17,10 @@
             <th scope="col">Name</th>
             <th scope="col">City</th>
             <th scope="col">Pincode</th>
-            <th scope="col">Total Ventilators</th>
-            <th scope="col">Capacity</th>
+            <th scope="col">Bed without Ventilators(Free/Total)</th>
+            <th scope="col">Bed with Ventilators</th>
+            <!-- <th scope="col">Ventilators Capacity</th> -->
+            <!-- <th scope="col">Capacity</th> -->
             <th scope="col">Status</th>
           </tr>
         </thead>
@@ -26,7 +30,7 @@
             <td> {{ center.name }} </td>
             <td> {{ center.city }} </td>
             <td>{{ center.pincode | number }}</td>
-            <td>{{ center.totalVentilators }}</td>
+            <td> {{center.ventilatorsUsage}} / {{ center.totalVentilators }}</td>
 
             <td>{{center.ventilatorsUsage}} / {{ center.totalVentilators }}</td>
             <td>
