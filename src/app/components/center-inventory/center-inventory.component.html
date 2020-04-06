@@ -1,0 +1,111 @@
+<div class="jumbotron">
+  <!-- <div class="container"> -->
+  <h1 class="display-3">Center Inventory</h1>
+  <p class="lead">Information about Inventory at center</p>
+  <hr class="my-2">
+
+  <form>
+    <!-- <div class="form-row">
+        <div class="form-group col-md-8">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Name">
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="typeEstablishment">Type of Establishment</label>
+          <select id="typeEstablishment" class="form-control">
+            <option selected>Hospital</option>
+            <option>Hotel</option>
+            <option>Open area</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="status">Status</label>
+          <select id="status" class="form-control">
+            <option selected>All Good</option>
+            <option>Need Equipment</option>
+            <option>Need Doctors</option>
+            <option>Can assist</option>
+          </select>
+        </div>
+      </div> -->
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="totalBeds">Total Number of Beds</label>
+        <input type="number" class="form-control" id="totalBeds" placeholder="100">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="totalBedsOccupied">Total Number of Beds Occupied</label>
+        <input type="number" class="form-control" id="totalBedsOccupied" placeholder="100">
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+        <label for="totalVentilatorBeds">Total Number of Beds with Ventilators</label>
+        <input type="number" class="form-control" id="totalVentilatorBeds" placeholder="100">
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="totalVentilatorBedsOccupied">Total Number of Beds with Ventilators Occupied</label>
+        <input type="number" class="form-control" id="totalVentilatorBedsOccupied" placeholder="100">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="totalBedsNoVentilators">Total Number of Beds without Ventilators</label>
+        <input type="number" class="form-control" id="totalBedsNoVentilators" placeholder="100">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="totalBedsNoVentilatorsOccupied">Total Number of Beds without Ventilators Occupied</label>
+        <input type="number" class="form-control" id="totalBedsNoVentilatorsOccupied" placeholder="100">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="requestPPEs">Request PPEs</label>
+        <input type="number" class="form-control" id="requestPPEs" placeholder="100">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="request">Request</label>
+        <input type="text" class="form-control" id="request" placeholder="Need ...">
+      </div>
+    </div>
+
+
+    <!-- <div class="form-group">
+        <label for="request">Request</label>
+        <input type="text" class="form-control" id="request" placeholder="Need ...">
+      </div> -->
+
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="atCapacity">
+        <label class="form-check-label" for="gridCheck">
+          At/Approaching Capacity(Can Take No more Patients)
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="canAssist">
+        <label class="form-check-label" for="canAssist">
+          Can Assist (Can Lend support to other hospitals)
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [routerLink]="['/inventory']"
+      routerLinkActive="router-link-active">Save</button>
+  </form>
+
+
+</div>
+<!-- </div> -->
+

@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="container">
+
+  <div class="jumbotron-fluid">
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink>Center Inventory</a>
+        <ng-template ngbNavContent>
+          <app-center-inventory></app-center-inventory>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="2">
+        <a ngbNavLink>Center Settings</a>
+        <ng-template ngbNavContent>
+          <app-settings></app-settings>
+        </ng-template>
+      </li>
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  </div>
+</div>
+
+
+<!-- <div *ngIf="true">
+<app-inventory></app-inventory>
+</div> -->

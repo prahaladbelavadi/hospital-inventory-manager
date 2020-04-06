@@ -12,9 +12,11 @@ import { InventoryComponent } from './components/inventory/inventory.component';
 import { PortalComponent } from './components/portal/portal.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { OverviewComponent } from './pages/overview/overview.component';
+import { CenterInventoryComponent } from './components/center-inventory/center-inventory.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent, HeaderComponent, DashboardComponent],
+  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent, HeaderComponent, DashboardComponent, OverviewComponent, CenterInventoryComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]

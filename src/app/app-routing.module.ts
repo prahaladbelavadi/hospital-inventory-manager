@@ -6,18 +6,20 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
 import { PortalComponent } from './components/portal/portal.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { OverviewComponent } from './pages/overview/overview.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'overview', component: OverviewComponent },
   { path: 'settings', component: SettingsComponent },
-  { path: 'inventory', component: InventoryComponent },
-  { path: 'portal', component: PortalComponent }
+  // { path: 'inventory', component: InventoryComponent },
+  { path: 'portal', component: PortalComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
