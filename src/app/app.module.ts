@@ -14,11 +14,30 @@ import { HeaderComponent } from './layout/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { OverviewComponent } from './pages/overview/overview.component';
 import { CenterInventoryComponent } from './components/center-inventory/center-inventory.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent, HeaderComponent, DashboardComponent, OverviewComponent, CenterInventoryComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  declarations: [
+    AppComponent,
+    LandingComponent,
+    LoginComponent,
+    SettingsComponent,
+    InventoryComponent,
+    PortalComponent,
+    HeaderComponent,
+    DashboardComponent,
+    OverviewComponent,
+    CenterInventoryComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
