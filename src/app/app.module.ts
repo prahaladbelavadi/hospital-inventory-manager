@@ -16,6 +16,7 @@ import { OverviewComponent } from './pages/overview/overview.component';
 import { CenterInventoryComponent } from './components/center-inventory/center-inventory.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SweetAlert2Module, SweetAlert2LoaderService } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,9 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     FormsModule,
     HttpClientModule,
+    SweetAlert2Module
   ],
-  providers: [],
+  providers: [SweetAlert2LoaderService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
