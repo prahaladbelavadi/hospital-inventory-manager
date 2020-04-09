@@ -12,11 +12,34 @@ import { InventoryComponent } from './components/inventory/inventory.component';
 import { PortalComponent } from './components/portal/portal.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { OverviewComponent } from './pages/overview/overview.component';
+import { CenterInventoryComponent } from './components/center-inventory/center-inventory.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SweetAlert2Module, SweetAlert2LoaderService } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, LoginComponent, SettingsComponent, InventoryComponent, PortalComponent, HeaderComponent, DashboardComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    LandingComponent,
+    LoginComponent,
+    SettingsComponent,
+    InventoryComponent,
+    PortalComponent,
+    HeaderComponent,
+    DashboardComponent,
+    OverviewComponent,
+    CenterInventoryComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule,
+    SweetAlert2Module
+  ],
+  providers: [SweetAlert2LoaderService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
